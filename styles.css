@@ -15,12 +15,12 @@ li {
 }
 
 section {
-  margin-bottom: 30px;
+  padding: 30px 0;
 }
 
 @media (min-width: 750px) {
   section {
-    margin-bottom: 80px;
+    padding: 80px 0;
   }
 }
 
@@ -39,7 +39,6 @@ i {
     margin-bottom: 5px;
     font-weight: 100;
     color: rgb(90, 30, 75);
-    /* color: rgb(19, 19, 19); */
   }
 }
 
@@ -162,6 +161,16 @@ li {
 }
 
 /* MISSION */
+.mission {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 750px) {
+  .mission {
+    margin-bottom: 80px;
+  }
+}
+
 .mission p:nth-of-type(1) {
   margin-bottom: 10px;
 }
@@ -191,8 +200,13 @@ li {
 /* GOALS */
 
 /* LISTS */
-.list {
-  margin-bottom: 30px;
+#lists {
+  background-color: white;
+}
+
+.lists {
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (min-width: 750px) {
@@ -202,7 +216,6 @@ li {
     width: 80%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 80px;
   }
 
   .lists h3 {
@@ -214,7 +227,9 @@ li {
 /* LISTS */
 
 /* FREEDOM */
-.freedom {
+.freedom-container {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
     "fr-hd"
@@ -223,7 +238,7 @@ li {
 }
 
 @media (min-width: 750px) {
-  .freedom {
+  .freedom-container {
     grid-template-areas:
       "fr-img fr-hd"
       "fr-img fr-txt";
@@ -260,7 +275,7 @@ li {
 }
 
 @media (min-width: 750px) {
-  .freedom {
+  .freedom-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
