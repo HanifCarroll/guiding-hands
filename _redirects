@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://guidinghands.netlify.com/* http://guidinghands.services/:splat 301!
