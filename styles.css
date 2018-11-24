@@ -296,9 +296,13 @@ li {
 
 /* FOOTER */
 .footer {
-  border-top: 1px solid black;
+  border-top: 1px solid grey;
   padding: 20px 0;
   margin-bottom: 0;
+}
+
+.footer h5 {
+  color: rgb(56, 56, 56);
 }
 
 .footer p {
