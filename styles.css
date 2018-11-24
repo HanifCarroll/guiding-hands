@@ -1,0 +1,307 @@
+/* GENERAL ELEMENTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbe8d3;
+}
+
+p,
+li {
+  color: rgb(47, 47, 47);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 750px) {
+  section {
+    margin-bottom: 80px;
+  }
+}
+
+.section-heading {
+  margin-bottom: 15px;
+}
+
+i {
+  font-size: 0px;
+}
+
+@media (min-width: 750px) {
+  i {
+    font-size: 3em;
+    margin-bottom: 5px;
+    font-weight: 100;
+    color: rgb(19, 19, 19);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(19, 19, 19);
+}
+
+p {
+  line-height: 1.5;
+}
+
+@media (min-width: 750px) {
+  p,
+  li {
+    font-size: 1.2em;
+  }
+}
+
+li {
+  line-height: 2;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* GENERAL ELEMENTS */
+
+/* HOME SECTION */
+.home {
+  background-repeat: no-repeat;
+  background: #cc2b5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+.contact-header {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.contact-header i {
+  color: white;
+  margin-right: 5px;
+  font-size: 1em;
+}
+
+.contact-header p {
+  color: white;
+}
+
+.logo {
+  margin-top: -40px;
+}
+
+.home-heading {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.home-subheading {
+  font-size: 1.3em;
+  margin-bottom: 50px;
+  color: rgb(224, 224, 224);
+}
+
+.home-paragraph {
+  font-size: 0.9em;
+  color: rgb(224, 224, 224);
+}
+
+@media (min-width: 750px) {
+  .home-heading {
+    font-size: 4em;
+  }
+
+  .home-subheading {
+    font-size: 2.2em;
+    margin-bottom: 50px;
+  }
+
+  .home-paragraph {
+    font-size: 1.1em;
+  }
+}
+/* HOME SECTION */
+
+@media (min-width: 750px) {
+  .about h3 {
+    font-size: 2em;
+  }
+}
+
+/* MISSION */
+.mission p:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  .mission p {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+/* MISSION */
+
+/* GOALS */
+.goals p:nth-of-type(1),
+.goals p:nth-of-type(2),
+.goals p:nth-of-type(3) {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  .goals p {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* GOALS */
+
+/* LISTS */
+.list {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 750px) {
+  .lists {
+    display: grid;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
+  }
+
+  .lists h3 {
+    text-align: center;
+    font-size: 1.3em;
+    height: 50px;
+  }
+}
+/* LISTS */
+
+/* FREEDOM */
+.freedom {
+  display: grid;
+  grid-template-areas:
+    "fr-hd"
+    "fr-img"
+    "fr-txt";
+}
+
+@media (min-width: 750px) {
+  .freedom {
+    grid-template-areas:
+      "fr-img fr-hd"
+      "fr-img fr-txt";
+  }
+
+  .freedom h3 {
+    text-align: left;
+    margin-top: 50px;
+  }
+}
+
+.freedom-heading {
+  grid-area: fr-hd;
+}
+
+.freedom-img-container {
+  text-align: center;
+  grid-area: fr-img;
+}
+
+.freedom-img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.freedom-text-container {
+  display: grid;
+  grid-area: fr-txt;
+  grid-template-rows: 1fr 1fr;
+}
+
+.freedom-text:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 750px) {
+  .freedom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .freedom-img {
+    width: 80%;
+  }
+
+  .freedom-text {
+    width: 80%;
+  }
+
+  .freedom-text h3 {
+    font-size: 2em;
+  }
+}
+/* FREEDOM */
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.footer p {
+  font-size: 0.8em;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .footer {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}
+
+.footer h3 {
+  text-align: center;
+}
+/* FOOTER */
