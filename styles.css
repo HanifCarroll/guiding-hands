@@ -75,20 +75,6 @@ li {
 
 /* HOME SECTION */
 .home {
-  background-repeat: no-repeat;
-  background: #cc2b5e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #753a88,
-    #cc2b5e
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #753a88,
-    #cc2b5e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background-size: cover;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -97,9 +83,21 @@ li {
   color: white;
   text-align: center;
 }
+.home-overlay {
+  z-index: 1;
+  position: absolute;
+  filter: brightness(40%);
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/sunflower.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .contact-header {
   position: absolute;
+  z-index: 2;
   top: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -122,18 +120,21 @@ li {
 }
 
 .home-heading {
+  z-index: 2;
   font-size: 2em;
   margin-bottom: 10px;
   color: white;
 }
 
 .home-subheading {
+  z-index: 2;
   font-size: 1.3em;
   margin-bottom: 50px;
   color: rgb(224, 224, 224);
 }
 
 .home-paragraph {
+  z-index: 2;
   font-size: 0.9em;
   color: rgb(224, 224, 224);
 }
