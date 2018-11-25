@@ -75,16 +75,13 @@ li {
 
 /* HOME SECTION */
 .home {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   height: 100vh;
-  display: flex;
-  color: white;
-  text-align: center;
 }
+
 .home-overlay {
-  z-index: 1;
+  top: 0;
+  left: 0;
   position: absolute;
   filter: brightness(40%);
   background-repeat: no-repeat;
@@ -95,9 +92,18 @@ li {
   height: 100%;
 }
 
+.home-text {
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
 .contact-header {
   position: absolute;
-  z-index: 2;
   top: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -120,21 +126,18 @@ li {
 }
 
 .home-heading {
-  z-index: 2;
   font-size: 2em;
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .home-subheading {
-  z-index: 2;
   font-size: 1.3em;
   margin-bottom: 50px;
   color: rgb(224, 224, 224);
 }
 
 .home-paragraph {
-  z-index: 2;
   font-size: 0.9em;
   color: rgb(224, 224, 224);
 }
