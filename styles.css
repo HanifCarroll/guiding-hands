@@ -92,6 +92,11 @@ li {
   height: 100%;
 }
 
+.home a:link {
+  text-decoration: none;
+  color: white;
+}
+
 .home-text {
   z-index: 2;
   flex-direction: column;
@@ -330,4 +335,10 @@ li {
 .footer h3 {
   text-align: center;
 }
+
+.footer a:link {
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+}
+
 /* FOOTER */
