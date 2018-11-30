@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+
 /* GENERAL ELEMENTS */
 * {
   margin: 0;
@@ -7,6 +9,7 @@
 
 body {
   background-color: #f1f1f1;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 p,
@@ -133,18 +136,18 @@ li {
 .home-heading {
   font-size: 2em;
   margin-bottom: 10px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .home-subheading {
   font-size: 1.3em;
   margin-bottom: 50px;
-  color: rgb(224, 224, 224);
+  color: rgb(236, 236, 236);
 }
 
 .home-paragraph {
   font-size: 0.9em;
-  color: rgb(224, 224, 224);
+  color: rgb(236, 236, 236);
 }
 
 @media (min-width: 750px) {
