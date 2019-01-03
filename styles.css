@@ -86,7 +86,7 @@ li {
   top: 0;
   left: 0;
   position: absolute;
-  filter: brightness(40%);
+  filter: brightness(70%);
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("images/sunflower.jpg");
